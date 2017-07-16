@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Dhii\\Data\\": "src"
+            "Dhii\\Data\\Container\\": "src"
         }
     },
     "scripts": {

@@ -18,7 +18,7 @@ interface NotFoundExceptionInterface extends
      *
      * @since [*next-version*]
      *
-     * @return string The key, for which data was requested.
+     * @return string The key, for which data was requested, if any.
      */
     public function getDataKey();
 }

@@ -14,7 +14,7 @@ interface ContainerAwareInterface
      *
      * @since [*next-version*]
      *
-     * @return ContainerInterface The container.
+     * @return ContainerInterface|null The container, if any.
      */
     public function getContainer();
 }

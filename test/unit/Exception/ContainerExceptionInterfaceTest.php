@@ -45,5 +45,6 @@ class ContainerExceptionInterfaceTest extends TestCase
 
         $this->assertInstanceOf(self::TEST_SUBJECT_CLASSNAME, $subject, 'A correct instance of the test subject could not be created');
         $this->assertInstanceOf('Dhii\\Data\\Container\\ContainerAwareInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Psr\\Container\\ContainerExceptionInterface', $subject, 'Subject does not implement required interface');
     }
 }

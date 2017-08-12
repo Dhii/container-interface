@@ -37,6 +37,8 @@ and is aware of that container.
 - [`NotFoundExceptionInterface`] - An exception that occurs when attempting to
 retrieve data for key that is not set, and is also container aware by extension.
 
+## Installation
+`composer require dhii/data-container-interface:^0.1`
 
 
 

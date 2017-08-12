@@ -36,7 +36,7 @@ retrieve data for key that is not set, and is also container aware by extension.
 
 
 [Dhii]:                               https://github.com/Dhii/dhii
-[Wiki]:                               ./wiki
+[Wiki]:                               https://github.com/Dhii/data-container-interface/wiki
 [PSR-11]:                             https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md
 
 [`psr/container`]:                    https://github.com/php-fig/container

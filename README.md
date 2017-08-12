@@ -6,8 +6,7 @@
 [![Latest Stable Version](https://poser.pugx.org/dhii/data-container-interface/version)](https://packagist.org/packages/dhii/data-container-interface)
 [![This package complies with Dhii standards](https://img.shields.io/badge/Dhii-Compliant-green.svg?style=flat-square)][Dhii]
 
-Interfaces for working with data containers.  
-This package complies with [Dhii] standards.
+Interfaces for working with data containers.
 
 ## Details
 This package introduces a couple of completely new

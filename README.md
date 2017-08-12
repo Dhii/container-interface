@@ -44,5 +44,5 @@ retrieve data for key that is not set, and is also container aware by extension.
 [`HasCapableInterface`]:              ./src/HasCapableInterface.php
 [`ContainerInterface`]:               ./src/ContainerInterface.php
 [`ContainerAwareInterface`]:          ./src/ContainerAwareInterface.php
-[`ContainerExceptionInterface`]:      ./src/ContainerExceptionInterface.php
-[`NotFoundExceptionInterface`]:       ./src/NotFoundExceptionInterface.php
+[`ContainerExceptionInterface`]:      ./src/Exception/ContainerExceptionInterface.php
+[`NotFoundExceptionInterface`]:       ./src/Exception/NotFoundExceptionInterface.php

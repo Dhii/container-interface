@@ -10,7 +10,7 @@ use Dhii\Data\Container\Exception\ContainerExceptionInterface;
 /**
  * Represents something that can have data retrieved by key.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ContainerInterface extends
         HasCapableInterface,
@@ -19,7 +19,7 @@ interface ContainerInterface extends
     /**
      * Retrieves something that corresponds to the key.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|Stringable $key The key to retrieve the data for.
      *

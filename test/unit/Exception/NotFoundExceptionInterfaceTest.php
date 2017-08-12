@@ -7,21 +7,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see \Dhii\Data\Container\Exception\NotFoundExceptionInterface}.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 class NotFoundExceptionInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Container\\Exception\\NotFoundExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return \Dhii\Data\Container\Exception\NotFoundExceptionInterface The new instance.
      */
@@ -38,7 +38,7 @@ class NotFoundExceptionInterfaceTest extends TestCase
     /**
      * Tests whether a correct instance of a descendant can be created.
      *
-     * @since [*next-version*]
+     * @since 0.1
      */
     public function testCanBeCreated()
     {

@@ -5,14 +5,14 @@ namespace Dhii\Data\Container;
 /**
  * Something that can have a container retrieved.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ContainerAwareInterface
 {
     /**
      * Retrieves the container associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @return ContainerInterface|null The container, if any.
      */

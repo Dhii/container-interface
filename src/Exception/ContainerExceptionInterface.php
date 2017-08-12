@@ -8,7 +8,7 @@ use Psr\Container\ContainerExceptionInterface as BaseContainerExceptionInterface
 /**
  * An exception that occurs in relation to a container.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface ContainerExceptionInterface extends
         ContainerAwareInterface,

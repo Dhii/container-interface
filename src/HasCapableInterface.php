@@ -8,14 +8,14 @@ use Dhii\Data\Container\Exception\ContainerExceptionInterface;
 /**
  * Represents something that can have data checked for by key.
  *
- * @since [*next-version*]
+ * @since 0.1
  */
 interface HasCapableInterface
 {
     /**
      * Checks whether this instance has data for a key.
      *
-     * @since [*next-version*]
+     * @since 0.1
      *
      * @param string|Stringable $key The key to check for.
      *

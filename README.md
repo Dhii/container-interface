@@ -19,6 +19,12 @@ exceptions, are compatible with PSR-11, in the sense that it's possible to pass
 instances of the respectable interfaces from this package where PSR-11 interfaces
 are expected.
 
+This package also supports [`dhii/stringable-interface`]: anything that expects
+or returns a string key can also accept or return a [`StringableInterface`]
+respectively, in addition to a `string`. However, this is optional, and there
+is no dependency on that package; implementations are responsible for requiring
+`dhii/stringable-interface` themselves.
+
 :book: Please see [Wiki] for detailed explanation.
 
 ### Interfaces
@@ -39,9 +45,12 @@ retrieve data for key that is not set, and is also container aware by extension.
 [PSR-11]:                             https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md
 
 [`psr/container`]:                    https://github.com/php-fig/container
+[`dhii/stringable-interface`]:        https://github.com/Dhii/stringable-interface
 
 [`HasCapableInterface`]:              ./src/HasCapableInterface.php
 [`ContainerInterface`]:               ./src/ContainerInterface.php
 [`ContainerAwareInterface`]:          ./src/ContainerAwareInterface.php
 [`ContainerExceptionInterface`]:      ./src/Exception/ContainerExceptionInterface.php
 [`NotFoundExceptionInterface`]:       ./src/Exception/NotFoundExceptionInterface.php
+
+[`StringableInterface`]:              https://github.com/Dhii/stringable-interface/blob/master/src/StringableInterface.php

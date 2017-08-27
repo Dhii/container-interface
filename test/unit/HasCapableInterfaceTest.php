@@ -3,9 +3,10 @@
 namespace Dhii\Data\Container\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Data\Container\HasCapableInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Data\Container\HasCapableInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -16,14 +17,14 @@ class HasCapableInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Container\\HasCapableInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\HasCapableInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return \Dhii\Data\Container\HasCapableInterface The new instance.
+     * @return TestSubject The new instance.
      */
     public function createInstance()
     {

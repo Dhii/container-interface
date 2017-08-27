@@ -3,9 +3,10 @@
 namespace Dhii\Data\Container\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Data\Container\ContainerAwareInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Data\Container\ContainerAwareInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -16,14 +17,14 @@ class ContainerAwareInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Container\\ContainerAwareInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\ContainerAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return \Dhii\Data\Container\ContainerAwareInterface The new instance.
+     * @return TestSubject The new instance.
      */
     public function createInstance()
     {

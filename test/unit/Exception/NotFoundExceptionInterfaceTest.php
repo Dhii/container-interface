@@ -31,6 +31,16 @@ class NotFoundExceptionInterfaceTest extends TestCase
         $mock = $this->mock(self::TEST_SUBJECT_CLASSNAME)
                 ->getContainer()
                 ->getDataKey()
+
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString()
                 ->new();
 
         return $mock;

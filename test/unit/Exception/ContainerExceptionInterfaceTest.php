@@ -30,6 +30,16 @@ class ContainerExceptionInterfaceTest extends TestCase
     {
         $mock = $this->mock(self::TEST_SUBJECT_CLASSNAME)
                 ->getContainer()
+
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString()
                 ->new();
 
         return $mock;
@@ -45,6 +55,7 @@ class ContainerExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(self::TEST_SUBJECT_CLASSNAME, $subject, 'A correct instance of the test subject could not be created');
+        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface');
         $this->assertInstanceOf('Dhii\Data\Container\ContainerAwareInterface', $subject, 'Subject does not implement required interface');
         $this->assertInstanceOf('Psr\Container\ContainerExceptionInterface', $subject, 'Subject does not implement required interface');
     }

@@ -2,6 +2,8 @@
 
 namespace Dhii\Data\Container;
 
+use \Util\String\StringableInterface as Stringable;
+
 /**
  * Something that can have a data key retrieved from it.
  *

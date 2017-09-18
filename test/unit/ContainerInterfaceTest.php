@@ -3,9 +3,10 @@
 namespace Dhii\Data\Container\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Data\Container\ContainerInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Data\Container\ContainerInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -16,14 +17,14 @@ class ContainerInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Container\\ContainerInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\ContainerInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return \Dhii\Data\Container\ContainerInterface The new instance.
+     * @return TestSubject The new instance.
      */
     public function createInstance()
     {
@@ -45,6 +46,6 @@ class ContainerInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(self::TEST_SUBJECT_CLASSNAME, $subject, 'A correct instance of the test subject could not be created');
-        $this->assertInstanceOf('Dhii\\Data\\Container\\HasCapableInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Dhii\Data\Container\HasCapableInterface', $subject, 'Subject does not implement required interface');
     }
 }

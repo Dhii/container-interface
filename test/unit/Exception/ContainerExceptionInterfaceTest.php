@@ -3,9 +3,10 @@
 namespace Dhii\Data\Container\Exception\UnitTest;
 
 use Xpmock\TestCase;
+use Dhii\Data\Container\Exception\ContainerExceptionInterface as TestSubject;
 
 /**
- * Tests {@see \Dhii\Data\Container\Exception\ContainerExceptionInterface}.
+ * Tests {@see TestSubject}.
  *
  * @since 0.1
  */
@@ -16,19 +17,29 @@ class ContainerExceptionInterfaceTest extends TestCase
      *
      * @since 0.1
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\\Data\\Container\\Exception\\ContainerExceptionInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\Exception\ContainerExceptionInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since 0.1
      *
-     * @return \Dhii\Data\Container\Exception\ContainerExceptionInterface The new instance.
+     * @return TestSubject The new instance.
      */
     public function createInstance()
     {
         $mock = $this->mock(self::TEST_SUBJECT_CLASSNAME)
                 ->getContainer()
+
+                // ThrowableInterface
+                ->getMessage()
+                ->getCode()
+                ->getFile()
+                ->getLine()
+                ->getTrace()
+                ->getTraceAsString()
+                ->getPrevious()
+                ->__toString()
                 ->new();
 
         return $mock;
@@ -44,7 +55,8 @@ class ContainerExceptionInterfaceTest extends TestCase
         $subject = $this->createInstance();
 
         $this->assertInstanceOf(self::TEST_SUBJECT_CLASSNAME, $subject, 'A correct instance of the test subject could not be created');
-        $this->assertInstanceOf('Dhii\\Data\\Container\\ContainerAwareInterface', $subject, 'Subject does not implement required interface');
-        $this->assertInstanceOf('Psr\\Container\\ContainerExceptionInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Dhii\Exception\ThrowableInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Dhii\Data\Container\ContainerAwareInterface', $subject, 'Subject does not implement required interface');
+        $this->assertInstanceOf('Psr\Container\ContainerExceptionInterface', $subject, 'Subject does not implement required interface');
     }
 }

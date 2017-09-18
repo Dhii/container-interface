@@ -3,33 +3,33 @@
 namespace Dhii\Data\Container\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Data\Container\HasCapableInterface as TestSubject;
+use Dhii\Data\Container\DataKeyAwareInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since [*next-version*]
  */
-class HasCapableInterfaceTest extends TestCase
+class DataKeyAwareInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\HasCapableInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\DataKeyAwareInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since [*next-version*]
      *
      * @return TestSubject The new instance.
      */
     public function createInstance()
     {
         $mock = $this->mock(self::TEST_SUBJECT_CLASSNAME)
-                ->has()
+                ->getDataKey()
                 ->new();
 
         return $mock;
@@ -38,7 +38,7 @@ class HasCapableInterfaceTest extends TestCase
     /**
      * Tests whether a correct instance of a descendant can be created.
      *
-     * @since 0.1
+     * @since [*next-version*]
      */
     public function testCanBeCreated()
     {

@@ -46,7 +46,7 @@ and is aware of that container.
 retrieve data for key that is not set, and is also container aware by extension.
 
 ## Installation
-`composer require dhii/data-container-interface:^0.1`
+`composer require dhii/data-container-interface:^0.2`
 
 
 

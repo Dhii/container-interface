@@ -40,6 +40,7 @@ is no dependency on that package; implementations are responsible for requiring
 - [`ContainerAwareInterface`] - Allows retrieval of a container instance.
 - [`SetCapableInterface`] - Allows setting the value for a key.
 - [`DeleteCapableInterface`] - Allows deleting a value by key.
+- [`ClearCapableInterface`] - Allows deleting all values.
 - [`ContainerExceptionInterface`] - An exception that occurs in relation to a container,
 and is aware of that container.
 - [`NotFoundExceptionInterface`] - An exception that occurs when attempting to
@@ -63,6 +64,7 @@ retrieve data for key that is not set, and is also container aware by extension.
 [`ContainerAwareInterface`]:          ./src/ContainerAwareInterface.php
 [`SetCapableInterface`]:              ./src/SetCapableInterface.php
 [`DeleteCapableInterface`]:           ./src/DeleteCapableInterface.php
+[`ClearCapableInterface`]:            ./src/ClearCapableInterface.php
 [`ContainerExceptionInterface`]:      ./src/Exception/ContainerExceptionInterface.php
 [`NotFoundExceptionInterface`]:       ./src/Exception/NotFoundExceptionInterface.php
 

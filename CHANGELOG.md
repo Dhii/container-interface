@@ -5,9 +5,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [[*next-version*]] - YYYY-MM-DD
+
+## [0.2-alpha1] - 2018-03-21
 ### Added
 - `SetCapableInterface`.
-- `DeleteCapableInterface.`
+- `DeleteCapableInterface.`.
+
+### Changed
+- Exceptions now extend Dhii `ThrowableInterface`.
+
+### Fixed
+- Usage of Dhii container interface instead of the PSR one.
 
 ## [0.1] - 2017-08-12
 Initial version.

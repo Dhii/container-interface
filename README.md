@@ -16,7 +16,7 @@ more useful, while still sticking to the spirit of PSR-11.
 Interfaces in this package extend those from [`psr/container`], the [PSR-11]
 repository, where applicable. As such, the container itself, as well as the
 exceptions, are compatible with PSR-11, in the sense that it's possible to pass
-instances of the respectable interfaces from this package where PSR-11 interfaces
+instances of the respective interfaces from this package where PSR-11 interfaces
 are expected.
 
 This package also supports [`dhii/stringable-interface`]: anything that expects

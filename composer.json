@@ -14,6 +14,7 @@
     "require": {
         "php": "^5.3 | ^7.0",
         "psr/container": "^1.0",
+        "dhii/factory-interface": "^0.1-alpha1",
         "dhii/exception-interface": "^0.1 | ^0.2"
     },
     "require-dev": {

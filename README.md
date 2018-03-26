@@ -41,6 +41,7 @@ is no dependency on that package; implementations are responsible for requiring
 - [`SetCapableInterface`] - Allows setting the value for a key.
 - [`DeleteCapableInterface`] - Allows deleting a value by key.
 - [`ClearCapableInterface`] - Allows deleting all values.
+- [`ContainerFactoryInterface`] - A factory that can create containers.
 - [`ContainerExceptionInterface`] - An exception that occurs in relation to a container,
 and is aware of that container.
 - [`NotFoundExceptionInterface`] - An exception that occurs when attempting to
@@ -65,6 +66,7 @@ retrieve data for key that is not set, and is also container aware by extension.
 [`SetCapableInterface`]:              ./src/SetCapableInterface.php
 [`DeleteCapableInterface`]:           ./src/DeleteCapableInterface.php
 [`ClearCapableInterface`]:            ./src/ClearCapableInterface.php
+[`ContainerFactoryInterface`]:        ./src/ContainerFactoryInterface.php
 [`ContainerExceptionInterface`]:      ./src/Exception/ContainerExceptionInterface.php
 [`NotFoundExceptionInterface`]:       ./src/Exception/NotFoundExceptionInterface.php
 

@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `ContainerFactoryInterface`.
 
-## [0.2-alpha2] - 2018-21-2018
+## [0.2-alpha2] - 2018-03-21
 ### Added
 - `ClearCapableInterface`.
 

@@ -13,11 +13,19 @@ use Psr\Container\ContainerInterface as BaseContainerInterface;
 interface ContainerFactoryInterface extends FactoryInterface
 {
     /**
-     * The key in the factory config for service definitions.
+     * The key in the factory config for container data.
      *
      * @since [*next-version*]
      */
-    const K_CFG_DEFINITIONS = 'definitions';
+    const K_DATA = 'data';
+
+    /**
+     * The key in the factory config for service definitions.
+     *
+     * @since [*next-version*]
+     * @deprecated
+     */
+    const K_CFG_DEFINITIONS = self::K_DATA;
 
     /**
      * {@inheritdoc}

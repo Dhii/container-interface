@@ -7,7 +7,7 @@ use Psr\Container\ContainerInterface as BaseContainerInterface;
 use Psr\Container\ContainerExceptionInterface;
 
 /**
- * Exposes means of deleting a data member.
+ * A container that can have a member removed.
  *
  * @since [*next-version*]
  */

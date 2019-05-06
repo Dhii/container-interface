@@ -11,7 +11,7 @@ use Dhii\Data\Container\SetCapableContainerInterface as TestSubject;
  *
  * @since [*next-version*]
  */
-class SetCapableInterfaceTest extends TestCase
+class SetCapableContainerInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.

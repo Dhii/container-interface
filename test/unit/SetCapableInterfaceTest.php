@@ -8,21 +8,21 @@ use Dhii\Data\Container\SetCapableInterface as TestSubject;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class SetCapableInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\SetCapableInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return TestSubject The new instance.
      */
@@ -38,7 +38,7 @@ class SetCapableInterfaceTest extends TestCase
     /**
      * Tests whether a correct instance of a descendant can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

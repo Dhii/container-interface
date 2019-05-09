@@ -7,14 +7,14 @@ use Util\String\StringableInterface as Stringable;
 /**
  * Something that can have a data key retrieved from it.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface DataKeyAwareInterface
 {
     /**
      * Retrieves the key that is associated with this instance.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return string|Stringable|null The key, if any.
      */

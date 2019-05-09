@@ -8,14 +8,14 @@ use Psr\Container\ContainerExceptionInterface;
 /**
  * Exposes means of setting data on an object.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface SetCapableInterface
 {
     /**
      * Sets the value of a data member with the specified key.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @param string|int|float|bool|Stringable $key   The key of the data member to set.
      * @param mixed                            $value The value to set.

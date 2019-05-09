@@ -12,9 +12,10 @@ php:
   - '7.4snapshot'
   - nightly
 
-allow_failures:
-  - php: nightly
-  - php: '7.4snapshot'
+matrix:
+  allow_failures:
+    - php: nightly
+    - php: '7.4snapshot'
 
 before_script:
   - phpenv config-add travis.php.ini

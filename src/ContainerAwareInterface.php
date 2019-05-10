@@ -2,6 +2,8 @@
 
 namespace Dhii\Data\Container;
 
+use Psr\Container\ContainerInterface as BaseContainerInterface;
+
 /**
  * Something that can have a container retrieved.
  *
@@ -14,7 +16,7 @@ interface ContainerAwareInterface
      *
      * @since 0.1
      *
-     * @return ContainerInterface|null The container, if any.
+     * @return BaseContainerInterface|null The container, if any.
      */
     public function getContainer();
 }

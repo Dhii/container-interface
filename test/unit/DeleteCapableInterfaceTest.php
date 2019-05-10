@@ -3,33 +3,33 @@
 namespace Dhii\Data\Container\UnitTest;
 
 use Xpmock\TestCase;
-use Dhii\Data\Container\HasCapableInterface as TestSubject;
+use Dhii\Data\Container\DeleteCapableInterface as TestSubject;
 
 /**
  * Tests {@see TestSubject}.
  *
- * @since 0.1
+ * @since 0.2
  */
-class HasCapableInterfaceTest extends TestCase
+class DeleteCapableInterfaceTest extends TestCase
 {
     /**
      * The name of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      */
-    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\HasCapableInterface';
+    const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\DeleteCapableInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since 0.1
+     * @since 0.2
      *
      * @return TestSubject The new instance.
      */
     public function createInstance()
     {
         $mock = $this->mock(self::TEST_SUBJECT_CLASSNAME)
-                ->has()
+                ->delete()
                 ->new();
 
         return $mock;
@@ -38,7 +38,7 @@ class HasCapableInterfaceTest extends TestCase
     /**
      * Tests whether a correct instance of a descendant can be created.
      *
-     * @since 0.1
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

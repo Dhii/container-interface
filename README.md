@@ -16,8 +16,14 @@ more useful, while still sticking to the spirit of PSR-11.
 Interfaces in this package extend those from [`psr/container`], the [PSR-11]
 repository, where applicable. As such, the container itself, as well as the
 exceptions, are compatible with PSR-11, in the sense that it's possible to pass
-instances of the respectable interfaces from this package where PSR-11 interfaces
+instances of the respective interfaces from this package where PSR-11 interfaces
 are expected.
+
+At the same time, the interfaces of this package aim to be compatible with those of
+[PSR-16]. This means that theoretically, implementations of these interfaces should
+be usable as a cache storage - albeit, in the current state of PSR-16, with some
+adaptation. In theory, this should allow all data objects to be accessible in
+the same way, regardless of what they are used for.
 
 This package also supports [`dhii/stringable-interface`]: anything that expects
 or returns a string key can also accept or return a [`StringableInterface`]
@@ -32,19 +38,24 @@ is no dependency on that package; implementations are responsible for requiring
 - [`HasCapableInterface`] - Allows checking for existence of data value by key.
 - [`ContainerInterface`] - Allows checking for and retrieval of data value by key.
 - [`ContainerAwareInterface`] - Allows retrieval of a container instance.
+- [`SetCapableInterface`] - Allows setting the value for a key.
+- [`DeleteCapableInterface`] - Allows deleting a value by key.
+- [`ClearCapableInterface`] - Allows deleting all values.
+- [`ContainerFactoryInterface`] - A factory that can create containers.
 - [`ContainerExceptionInterface`] - An exception that occurs in relation to a container,
 and is aware of that container.
 - [`NotFoundExceptionInterface`] - An exception that occurs when attempting to
 retrieve data for key that is not set, and is also container aware by extension.
 
 ## Installation
-`composer require dhii/data-container-interface:^0.1`
+`composer require dhii/data-container-interface:^0.2`
 
 
 
 [Dhii]:                               https://github.com/Dhii/dhii
 [Wiki]:                               https://github.com/Dhii/data-container-interface/wiki
 [PSR-11]:                             https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-11-container.md
+[PSR-16]:                             https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-16-simple-cache.md
 
 [`psr/container`]:                    https://github.com/php-fig/container
 [`dhii/stringable-interface`]:        https://github.com/Dhii/stringable-interface
@@ -52,6 +63,10 @@ retrieve data for key that is not set, and is also container aware by extension.
 [`HasCapableInterface`]:              ./src/HasCapableInterface.php
 [`ContainerInterface`]:               ./src/ContainerInterface.php
 [`ContainerAwareInterface`]:          ./src/ContainerAwareInterface.php
+[`SetCapableInterface`]:              ./src/SetCapableInterface.php
+[`DeleteCapableInterface`]:           ./src/DeleteCapableInterface.php
+[`ClearCapableInterface`]:            ./src/ClearCapableInterface.php
+[`ContainerFactoryInterface`]:        ./src/ContainerFactoryInterface.php
 [`ContainerExceptionInterface`]:      ./src/Exception/ContainerExceptionInterface.php
 [`NotFoundExceptionInterface`]:       ./src/Exception/NotFoundExceptionInterface.php
 

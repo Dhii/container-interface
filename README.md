@@ -39,8 +39,11 @@ is no dependency on that package; implementations are responsible for requiring
 - [`ContainerInterface`] - Allows checking for and retrieval of data value by key.
 - [`ContainerAwareInterface`] - Allows retrieval of a container instance.
 - [`SetCapableInterface`] - Allows setting the value for a key.
+- [`SetCapableContainerInterface`] - A container that can have a value set for a key.
 - [`DeleteCapableInterface`] - Allows deleting a value by key.
+- [`DeleteCapableContainerInterface`] - A container that allows deleting a value by key.
 - [`ClearCapableInterface`] - Allows deleting all values.
+- [`ClearCapableContainerInterface`] - A container that allows deleting all values.
 - [`ContainerFactoryInterface`] - A factory that can create containers.
 - [`ContainerExceptionInterface`] - An exception that occurs in relation to a container,
 and is aware of that container.
@@ -64,8 +67,11 @@ retrieve data for key that is not set, and is also container aware by extension.
 [`ContainerInterface`]:               ./src/ContainerInterface.php
 [`ContainerAwareInterface`]:          ./src/ContainerAwareInterface.php
 [`SetCapableInterface`]:              ./src/SetCapableInterface.php
+[`SetCapableContainerInterface`]:     ./src/SetCapableContainerInterface.php
 [`DeleteCapableInterface`]:           ./src/DeleteCapableInterface.php
+[`DeleteCapableContainerInterface`]:  ./src/DeleteCapableContainerInterface.php
 [`ClearCapableInterface`]:            ./src/ClearCapableInterface.php
+[`ClearCapableContainerInterface`]:   ./src/ClearCapableContainerInterface.php
 [`ContainerFactoryInterface`]:        ./src/ContainerFactoryInterface.php
 [`ContainerExceptionInterface`]:      ./src/Exception/ContainerExceptionInterface.php
 [`NotFoundExceptionInterface`]:       ./src/Exception/NotFoundExceptionInterface.php

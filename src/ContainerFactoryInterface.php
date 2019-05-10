@@ -8,21 +8,21 @@ use Psr\Container\ContainerInterface as BaseContainerInterface;
 /**
  * Something that can create new container instances.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface ContainerFactoryInterface extends FactoryInterface
 {
     /**
      * The key in the factory config for container data.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const K_DATA = 'data';
 
     /**
      * The key in the factory config for service definitions.
      *
-     * @since [*next-version*]
+     * @since 0.2
      * @deprecated
      */
     const K_CFG_DEFINITIONS = self::K_DATA;
@@ -30,7 +30,7 @@ interface ContainerFactoryInterface extends FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return BaseContainerInterface The created container instance.
      */

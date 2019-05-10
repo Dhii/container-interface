@@ -9,21 +9,21 @@ use Xpmock\TestCase;
 /**
  * Tests {@see TestSubject}.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 class ContainerFactoryInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     const TEST_SUBJECT_CLASSNAME = 'Dhii\Data\Container\ContainerFactoryInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @return TestSubject|MockObject
      */
@@ -35,7 +35,7 @@ class ContainerFactoryInterfaceTest extends TestCase
     /**
      * Tests whether a valid instance of the test subject can be created.
      *
-     * @since [*next-version*]
+     * @since 0.2
      */
     public function testCanBeCreated()
     {

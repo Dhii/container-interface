@@ -7,14 +7,14 @@ use Psr\Container\ContainerExceptionInterface;
 /**
  * Exposes means of clearing the members of the container.
  *
- * @since [*next-version*]
+ * @since 0.2
  */
 interface ClearCapableInterface
 {
     /**
      * Clears the members.
      *
-     * @since [*next-version*]
+     * @since 0.2
      *
      * @throws ContainerExceptionInterface If problem clearing.
      */

@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `DeleteCapableContainerInterface`.
 - `ClearCapableContainerInterface`.
 
+## [0.2] - 2019-05-06
+Stable release. See alpha releases for changes.
+
 ## [0.2-alpha3] - 2018-04-26
 ### Added
 - `ContainerFactoryInterface`.

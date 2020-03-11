@@ -1,4 +1,4 @@
-# Dhii - Data - Container - Interface
+# \[DEPRECATED\] Dhii - Data - Container - Interface
 
 [![Build Status](https://travis-ci.org/Dhii/data-container-interface.svg?branch=master)](https://travis-ci.org/Dhii/data-container-interface)
 [![Code Climate](https://codeclimate.com/github/Dhii/data-container-interface/badges/gpa.svg)](https://codeclimate.com/github/Dhii/data-container-interface)
